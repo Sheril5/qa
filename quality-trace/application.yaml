@@ -10,9 +10,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Sheril5/quality.git
+    repoURL: https://github.com/Sheril5/qa.git
     targetRevision: HEAD
-    path: 
+    path: quality-trace
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp
