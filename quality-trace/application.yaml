@@ -4,6 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
   argocd-image-updater.argoproj.io/image-list: ghcr.io/kube-tarian/quality-trace/quality-trace
+  argocd-image-updater.argoproj.io/myapp-argo-application.update-strategy: latest
   argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/gitcreds
   argocd-image-updater.argoproj.io/git-branch: main
 
